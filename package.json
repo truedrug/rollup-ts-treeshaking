@@ -1,0 +1,30 @@
+{
+  "name": "@srm/rollup-treeshaking",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "lib"
+  ],
+  "sideEffects": false,
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && rollup -c rollup.config.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.11.30",
+    "prettier": "^2.8.0",
+    "rollup": "^3.29.4",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^4.9.3"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
