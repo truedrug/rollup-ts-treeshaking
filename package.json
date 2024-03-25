@@ -10,7 +10,8 @@
   "module": "lib/esm/index.js",
   "types": "lib/esm/index.d.ts",
   "scripts": {
-    "build": "rm -rf lib && rollup -c rollup.config.js"
+    "build": "rm -rf lib && rollup -c rollup.config.js",
+    "publish": "npm run build && npm version patch && npm publish --access public"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
