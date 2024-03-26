@@ -10,7 +10,8 @@
   "module": "lib/esm/index.js",
   "types": "lib/esm/index.d.ts",
   "scripts": {
-    "build": "rm -rf lib && rollup -c rollup.config.js"
+    "build": "rm -rf lib && rollup -c rollup.config.js",
+    "prepublishOnly": "npm version patch"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
@@ -28,6 +29,7 @@
   "keywords": [],
   "license": "ISC",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
